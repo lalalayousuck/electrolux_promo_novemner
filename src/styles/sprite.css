@@ -1,0 +1,18 @@
+$sprite: (
+	favicon: (
+		offset-x: 0px,
+		offset-y: -371px,
+		width: 16px,
+		height: 16px,
+	),
+	red-brush-main: (
+		offset-x: 0px,
+		offset-y: 0px,
+		width: 509px,
+		height: 365px,
+	),
+);
+
+$spritesheet-width: 509px;
+$spritesheet-height: 387px;
+$spritesheet-image: "sprite.png";

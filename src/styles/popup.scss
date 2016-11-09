@@ -1,0 +1,91 @@
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("./popup-bg.png");
+  color: white;
+  text-align: center;
+
+  .container {
+    position: relative;
+  }
+
+  &.is-closed {
+    display: none;
+  }
+}
+
+.popup_title {
+  margin: 30px 0 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.popup_desc {
+  margin: 0 auto 53px;
+  width: 535px;
+  font-size: 14px;
+}
+
+.btn {
+  display: block;
+  margin: 40px auto;
+  width: 200px;
+  padding: 20px 45px;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.popup_title_articles {
+  position: relative;
+  margin: 0 auto;
+  width: 180px;
+  font-size: 13px;
+  text-transform: uppercase;
+
+  &:before,
+  &:after {
+    position: absolute;
+    display: block;
+    bottom: 8px;
+    left: -380px;
+    width: 380px;
+    height: 1px;
+    background-color: #834a78;
+    content: "";
+  }
+
+  &:after {
+    left: 180px;
+  }
+}
+
+.popup_exit {
+  position: absolute;
+  top: -50px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 14px;
+
+  &:after,
+  &:before {
+    position: absolute;
+    display: block;
+    top: 7px;
+    right: -30px;
+    width: 30px;
+    height: 1px;
+    background-color: white;
+    content: "";
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+}

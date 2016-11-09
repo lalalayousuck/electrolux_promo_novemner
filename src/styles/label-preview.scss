@@ -1,0 +1,79 @@
+.label-previews {
+  margin: 45px 0 40px;
+  min-height: 240px;
+}
+
+.label-preview {
+  position: relative;
+  background-color: white;
+  border: 5px solid #d95d99;
+  border-left-width: 0;
+  border-radius: 5px 10px 10px 5px;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:before {
+    position: absolute;
+    content: "";
+    display: block;
+    transition: all 0.3s;
+  }
+
+  &:after {
+    position: absolute;
+    display: block;
+    background-color: transparent;
+    border: 5px solid #d95d99;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-radius: 15px 5px 0 2px;
+    content: "";
+    transform: rotate(-45deg);
+    transition: all 0.3s;
+  }
+}
+
+.label__xl {
+  margin: 104px auto 0;
+  width: 360px;
+  height: 150px;
+
+  &:after {
+    top: 16px;
+    left: -50px;
+    width: 107px;
+    height: 107px;
+  }
+
+  &:before {
+    @include triangle(r, white, 70px, 70px);
+    top: 0;
+    left: -136px;
+  }
+}
+
+.label__l {
+  float: left;
+  margin: 0 80px 20px 0;
+  width: 260px;
+  height: 110px;
+
+
+
+  &:after {
+    top: 10px;
+    left: -38px;
+    width: 79px;
+    height: 79px;
+  }
+
+  &:before {
+    @include triangle(r, white, 50px, 50px);
+    top: 0;
+    left: -98px;
+  }
+}
+
+.label-margin {
+  margin-right: 0;
+}
