@@ -1,0 +1,45 @@
+.post-preview {
+  display: block;
+  margin: 10px 0;
+  padding: 0 20px 0 10px;
+  color: black;
+  text-align: left;
+  font-size: 16px;
+
+  &.post-preview__l {
+    font-size: 13px;
+    padding: 0 10px;
+
+    .post-preview_pic {
+      width: 80px;
+      height: 80px;
+    }
+
+    .post-preview_tag {
+      padding: 0;
+    }
+
+    .post-preview_title {
+      line-height: 18px;
+    }
+  }
+}
+
+.post-preview_pic {
+  float: left;
+  margin: 0 10px 0 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 4px;
+}
+
+.post-preview_tag {
+  padding: 10px 0 0;
+  color: #999999;
+}
+
+.post-preview_title {
+  font-weight: 600;
+  color: #333333;
+  line-height: 24px;
+}

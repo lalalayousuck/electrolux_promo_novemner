@@ -3,9 +3,9 @@
   width: 66px;
   height: 50px;
   background-color: white;
-  border: 5px solid #d95d99;
+  border: 3px solid #d95d99;
   border-left-width: 0;
-  border-radius: 5px 10px 10px 5px;
+  border-radius: 5px 4px 4px 5px;
   transition: all 0.3s;
   cursor: pointer;
   transform: rotate(45deg);
@@ -16,10 +16,10 @@
   } 
 
   &:before {
-    @include triangle(r, white, 20px, 20px);
+    @include triangle(r, white, 22px, 22px);
     position: absolute;
     top: 0;
-    left: -39px;
+    left: -42px;
     content: "";
     display: block;
     transition: all 0.3s;
@@ -27,13 +27,13 @@
 
   &:after {
     position: absolute;
-    top: 0px;
+    top: 2px;
     left: -16px;
     display: block;
     width: 40px;
     height: 40px;
     background-color: transparent;
-    border: 5px solid #d95d99;
+    border: 3px solid #d95d99;
     border-right-width: 0;
     border-bottom-width: 0;
     border-radius: 5px 10px 10px 10px;
@@ -85,18 +85,18 @@
     .label_btn {
       background-color: #d697bc;
       border-color: #cc7dab;
-      box-shadow: 0 0 0 5px #c66ea1;
+      box-shadow: 0 0 0 8px #c66ea1;
     }
   }
 }
 
 .label_elem_circle {
   position: absolute;
-  left: -6px;
-  top: 12px;
-  width: 15px;
-  height: 15px;
-  border: 5px solid #d95d99;
+  left: -13px;
+  top: 17px;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #d95d99;
   border-radius: 50%;
   background-color: white; 
 }
@@ -125,7 +125,7 @@
 
 .label_btn {
   position: absolute;
-  top: 8px;
+  top: 9px;
   left: 20px;
   width: 25px;
   height: 25px;
@@ -134,33 +134,70 @@
   border-radius: 50%;
   background-color: #0d113d;
   border: 5px solid #9999ab;
-  box-shadow: 0 0 0 5px #d1d2d9;
+  box-shadow: 0 0 0 8px #d1d2d9;
   font-size: 10px;
   font-weight: 600;
   color: white;
 }
 
 .label1 {
-  top: 30%;
-  left: 20%;
+  top: 31%;
+  left: 12%;
+  margin: 5px;
 }
 
 .label2 {
-  top: 60%;
-  left: 80%;
+  top: 86%;
+  left: 12%;
+  margin: 3px;
 }
 
 .label3 {
-  top: 20%;
-  left: 45%;
+  top: 61%;
+  left: 21%;
+  margin: 3px;
 }
 
 .label4 {
-  bottom: 10%;
-  left: 67%;
+  top: 44%;
+  left: 31%;
+  margin-left: -4px;
 }
 
 .label5 {
-  top: 45%;
-  left: 90%;
+  top: 81%;
+  left: 42%;
+  margin: 4px;
+}
+
+.label6 {
+  top: 61%;
+  left: 51%;
+}
+
+.label7 {
+  top: 48%;
+  left: 62%;
+}
+
+.label8 {
+  top: 35%;
+  left: 71%;
+}
+
+.label9 {
+  bottom: 24%;
+  left: 70%;
+  margin-left: 6px;
+}
+
+.label10 {
+  top: 48%;
+  left: 83%;
+}
+
+.label11 {
+  top: 86%;
+  left: 83%;
+  margin-left: 4px;
 }

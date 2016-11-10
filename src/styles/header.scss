@@ -29,7 +29,7 @@
       color: #111111;
       transition: opacity 0.2s;
       font-size: 16px;
-      letter-spacing: 1.1px;
+      letter-spacing: 0;
 
       &:hover {
         opacity: 0.6;
@@ -37,11 +37,11 @@
     }
 
     &:nth-child(2) a {
-      margin-right: 30px;
+      margin-right: 28px;
     }
 
     &:nth-child(4) a {
-      margin-right: 38px;
+      margin-right: 36px;
     }
 
     &:nth-child(7) a {
@@ -51,6 +51,7 @@
     &:last-child {
       position: relative;
       float: right;
+      margin-right: 14px;
 
       &:after {
         position: absolute;
@@ -59,6 +60,7 @@
         bottom: -18px;
         right: 0;
         font-size: 12px;
+        letter-spacing: 1px;
       }
 
       img {

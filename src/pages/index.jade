@@ -14,81 +14,98 @@ html.no-js(lang='')
     link(rel="stylesheet" href="./assets/main.css")
     link(href='./assets/favicon.png', rel='shortcut icon', type='image/vnd.microsoft.icon')
   body
-    
-    main.main
-      .container
-        .main_white_gradient
-        header.header
-          .container
-            ul
-              li
-                a(href='http://www.inmyroom.ru')
-                  img(src="./assets/imr-logo.png")
-              li
-                a(href='http://www.inmyroom.ru/my/feed') Моя лента
-              li
-                a(href='http://www.inmyroom.ru/posts') Идеи
-              li
-                a(href='http://www.inmyroom.ru/products') Магазины
-              li
-                a(href='http://www.inmyroom.ru/photos') Фото
-              li
-                a(href='http://www.inmyroom.ru/discussions') Советы
-              li
-                a(href='http://www.inmyroom.ru/profi') Профи
-              li
-                img(src='./assets/electrolux_header_logo.png')
-        .label.label__xs.label1
-          .label_btn x
-          .label_elem_circle
-          .label_elem_line
+    .keeper(data-component="popup")
+      main.main
+        .container
+          .main_white_gradient
+          header.header
+            .container
+              ul
+                li
+                  a(href='http://www.inmyroom.ru')
+                    img(src="./assets/imr-logo.png")
+                li
+                  a(href='http://www.inmyroom.ru/my/feed') Моя лента
+                li
+                  a(href='http://www.inmyroom.ru/posts') Идеи
+                li
+                  a(href='http://www.inmyroom.ru/products') Магазин
+                li
+                  a(href='http://www.inmyroom.ru/photos') Фото
+                li
+                  a(href='http://www.inmyroom.ru/discussions') Советы
+                li
+                  a(href='http://www.inmyroom.ru/profi') Профи
+                li
+                  img(src='./assets/electrolux_header_logo.png')
+          .label.label1.js-popupLabel(data-id="0")
+            .label_btn x
+            .label_elem_circle
+            .label_elem_line
 
-        .label.label__xs.label2
-          .label_btn x
-          .label_elem_circle
-          .label_elem_line
+          .label.label2.js-popupLabel(data-id="1")
+            .label_btn x
+            .label_elem_circle
+            .label_elem_line
 
-        .label.label__xs.label3
-          .label_btn x
-          .label_elem_circle
-          .label_elem_line
+          .label.label3.js-popupLabel(data-id="2")
+            .label_btn x
+            .label_elem_circle
+            .label_elem_line
 
-        .label.label__xs.label4
-          .label_btn x
-          .label_elem_circle
-          .label_elem_line
+          .label.label4.js-popupLabel(data-id="3")
+            .label_btn x
+            .label_elem_circle
+            .label_elem_line
 
-        .label.label__xs.label5
-          .label_btn x
-          .label_elem_circle
-          .label_elem_line
+          .label.label5.js-popupLabel(data-id="4")
+            .label_btn x
+            .label_elem_circle
+            .label_elem_line
 
-    .popup.is-closed
-      .container
-        .label-preview.label__xl
-          .product-preview
-        .popup_title совет от Electrolux
-        .popup_desc В профессиональных прачечных регулярно используетсяпар для освежения одежды и разглаживания складок на ней — волокна размягчаются, заставляя исчезать складки и загибы. Эта технология SteamSystem теперь доступна и для вас; большинство складок исчезнут, и одежда будет требовать минимальной обработки утюгом или вообщене будет в ней нуждаться
+          .label.label6.js-popupLabel(data-id="5")
+            .label_btn x
+            .label_elem_circle
+            .label_elem_line
 
-        .popup_title_articles Другие статьи
+          .label.label7.js-popupLabel(data-id="6")
+            .label_btn x
+            .label_elem_circle
+            .label_elem_line
 
-        .label-previews
-          .label-preview.label__l
-            .product-preview
-          .label-preview.label__l
-            .product-preview
-          .label-preview.label-margin.label__l
-            .product-preview
-          .label-preview.label__l
-            .product-preview
-          .label-preview.label__l
-            .product-preview
-          .label-preview.label-margin.label__l
-            .product-preview
+          //- .label.label8.js-popupLabel
+          //-   .label_btn x
+          //-   .label_elem_circle
+          //-   .label_elem_line
 
-        .btn Смотреть все
-        .popup_exit ЗАКРЫТЬ
+          //- .label.label9.js-popupLabel
+          //-   .label_btn x
+          //-   .label_elem_circle
+          //-   .label_elem_line
 
-            
+          //- .label.label10.js-popupLabel
+          //-   .label_btn x
+          //-   .label_elem_circle
+          //-   .label_elem_line
+
+          //- .label.label11.js-popupLabel
+          //-   .label_btn x
+          //-   .label_elem_circle
+          //-   .label_elem_line
+
+      .popup.is-closed
+        .container
+          .label-preview.label__xl
+
+          .popup_title совет от Electrolux
+          .popup_desc В профессиональных прачечных регулярно используетсяпар для освежения одежды и разглаживания складок на ней — волокна размягчаются, заставляя исчезать складки и загибы. Эта технология SteamSystem теперь доступна и для вас; большинство складок исчезнут, и одежда будет требовать минимальной обработки утюгом или вообщене будет в ней нуждаться
+
+          .popup_title_articles Другие статьи
+
+          .label-previews
+
+          .btn Смотреть все
+          .popup_exit.js-popupExit ЗАКРЫТЬ
+
     script(src='./assets/templates.js')
     script(src='./assets/main.js')
