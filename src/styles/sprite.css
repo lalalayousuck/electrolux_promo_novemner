@@ -1,18 +1,18 @@
 $sprite: (
-	favicon: (
+	exit_btn: (
 		offset-x: 0px,
-		offset-y: -371px,
+		offset-y: 0px,
+		width: 28px,
+		height: 28px,
+	),
+	favicon: (
+		offset-x: -34px,
+		offset-y: 0px,
 		width: 16px,
 		height: 16px,
 	),
-	red-brush-main: (
-		offset-x: 0px,
-		offset-y: 0px,
-		width: 509px,
-		height: 365px,
-	),
 );
 
-$spritesheet-width: 509px;
-$spritesheet-height: 387px;
+$spritesheet-width: 50px;
+$spritesheet-height: 28px;
 $spritesheet-image: "sprite.png";

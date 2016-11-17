@@ -1,7 +1,12 @@
 .label-previews {
   margin: 37px 0 40px;
-  min-height: 240px;
   padding-left: 39px;
+
+  &:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
 }
 
 .label-preview {

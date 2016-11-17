@@ -49,4 +49,18 @@ module.exports =
       "url": "https://www.inmyroom.ru/posts/13481"
       "title": "Жизнь в малогабаритке: как создать комфортную обстановку для двоих"
     }
+    {
+      "id": 7
+      "category": "Советы"
+      "image": "https://cdn.inmyroom.ru/uploads/post/teaser/c8/c8c9/s_c8c9e5ae-00ed-41aa-ab54-9a199e68ead7.jpg"
+      "url": "https://www.inmyroom.ru/posts/13697"
+      "title": "6 признаков идеального интерьера: рассказывает профи"
+    }
+    {
+      "id": 8
+      "category": "Советы"
+      "image": "https://cdn.inmyroom.ru/uploads/post/teaser/58/5801/s_5801981b-2605-4346-9136-e4b50cb55aa8.jpg"
+      "url": "https://www.inmyroom.ru/posts/13539"
+      "title": "Что вы должны знать об эргономике: 9 советов по обустройству дома"
+    }
   ]

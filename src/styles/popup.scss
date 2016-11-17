@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   min-height: 100vh;
+  padding-bottom: 20px;
   background-image: url("./popup-bg.png");
   color: white;
   text-align: center;
@@ -79,20 +80,20 @@
   font-size: 14px;
   letter-spacing: 1px;
 
-  &:after,
   &:before {
+    @include icon(exit_btn);
     position: absolute;
-    display: block;
-    top: 7px;
+    top: -5px;
     right: -46px;
-    width: 38px;
-    height: 2px;
-    background-color: white;
-    content: "";
-    transform: rotate(45deg);
   }
 
   &:after {
-    transform: rotate(-45deg);
+    display: block;
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 20px;
+    right: -20px;
+    top: 0;
   }
 }

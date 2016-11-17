@@ -5,7 +5,8 @@ Component.define('popup', {
 
   events: {
     'click on %label': 'openPopup',
-    'click on %exit': 'closePopup'
+    'click on %exit': 'closePopup',
+    'click on %moar': 'showMoarPosts'
   },
 
   init: function() { 
@@ -22,6 +23,7 @@ Component.define('popup', {
 
     this.setMainAdvise();
     this.prepareData(id);
+    console.log(this.dataPosts)
     this.renderPosts();
 
     $('.popup').addClass('is-visible');
@@ -29,7 +31,6 @@ Component.define('popup', {
 
   prepareData: function(id) {
     this.dataPosts = data.posts.filter(function(post) {
-      console.log(post);
       return post.id != id; 
     });
   },
@@ -39,11 +40,19 @@ Component.define('popup', {
   },
 
   renderPosts: function() {
-    $('.label-previews').html(Templates.advices({posts: this.dataPosts}));
+    this.dataPostsRender = this.dataPosts.slice(0, 6);
+    $('.label-previews').html(Templates.advices({posts: this.dataPostsRender}));
+  },
+
+  showMoarPosts: function(e, el) {
+    $(el).fadeOut();
+    this.dataPostsRender = this.dataPosts.slice(6);
+    $('.label-previews').append(Templates.advices({posts: this.dataPostsRender}));
   },
 
   closePopup: function() {
     $('.popup').removeClass('is-visible'); 
     $('.is-active').removeClass('is-active');
+    $('.label-previews').html('');
   }
 });

@@ -2,15 +2,15 @@ doctype html
 html.no-js(lang='')
   head
     meta(charset='utf-8')
-    meta(name='description', content='Спецпроект «Азбука ремонта» от МТС')
+    meta(name='description', content='Спецпроект «Electrolux time machine')
     // <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     // <meta name="viewport" content="width=320, initial-scale=1">
     //if IE
       link(rel='stylesheet', href='styles/ie.css')
-    meta(property='og:title', content='Азбука ремонта от МТС')
-    meta(property='og:description', content='спланируй свой ремонт от А до Я')
+    meta(property='og:title', content='Electrolux time machine')
+    meta(property='og:description', content='Советы по уборке квартиры.')
     meta(property='og:image', content='http://www.inmyroom.ru/landing/mtsazbukaremonta/images/share.jpg')
-    title Азбука ремонта от МТС
+    title Electrolux time machine
     link(rel="stylesheet" href="./assets/main.css")
     link(href='./assets/favicon.png', rel='shortcut icon', type='image/vnd.microsoft.icon')
   body
@@ -18,80 +18,88 @@ html.no-js(lang='')
       main.main
         .container
           .main_white_gradient
-          header.header
-            .container
+          .header(data-component="header")
+            .container  
+              .header_toggler.js-headerToggler
+                span
+                span
+                span
+
+              a.header_logo(href='http://www.inmyroom.ru')
+                    img(src="./assets/logo.svg")
+
               ul
-                li
-                  a(href='http://www.inmyroom.ru')
-                    img(src="./assets/imr-logo.png")
-                li
-                  a(href='http://www.inmyroom.ru/my/feed') Моя лента
-                li
-                  a(href='http://www.inmyroom.ru/posts') Идеи
-                li
-                  a(href='http://www.inmyroom.ru/products') Магазин
-                li
-                  a(href='http://www.inmyroom.ru/photos') Фото
-                li
-                  a(href='http://www.inmyroom.ru/discussions') Советы
-                li
-                  a(href='http://www.inmyroom.ru/profi') Профи
-                li
-                  img(src='./assets/electrolux_header_logo.png')
-          .label.label1.js-popupLabel(data-id="0")
-            .label_btn x
-            .label_elem_circle
-            .label_elem_line
+                li.header_nav_item
+                  a(href='http://www.inmyroom.ru/my/feed' target="_blank") Моя лента
+                li.header_nav_item
+                  a(href='http://www.inmyroom.ru/posts' target="_blank") Идеи
+                li.header_nav_item
+                  a(href='http://www.inmyroom.ru/products' target="_blank") Магазин
+                li.header_nav_item
+                  a(href='http://www.inmyroom.ru/photos' target="_blank") Фото
+                li.header_nav_item
+                  a(href='http://www.inmyroom.ru/discussions' target="_blank") Советы
+                li.header_nav_item
+                  a(href='http://www.inmyroom.ru/profi' target="_blank") Профи
+              
+              a.header_promo-logo(href="http://www.electrolux.ru/Products/%D0%A3%D1%85%D0%BE%D0%B4-%D0%B7%D0%B0-%D0%B1%D0%B5%D0%BB%D1%8C%D1%91%D0%BC/" target="_blank")
+                img(src='./assets/electrolux_header_logo.png')
 
-          .label.label2.js-popupLabel(data-id="1")
-            .label_btn x
-            .label_elem_circle
-            .label_elem_line
+      .labels
+        .label.label1.js-popupLabel(data-id="0")
+          .label_btn x
+          .label_elem_circle
+          .label_elem_line
 
-          .label.label3.js-popupLabel(data-id="2")
-            .label_btn x
-            .label_elem_circle
-            .label_elem_line
+        .label.label2.js-popupLabel(data-id="1")
+          .label_btn x
+          .label_elem_circle
+          .label_elem_line
 
-          .label.label4.js-popupLabel(data-id="3")
-            .label_btn x
-            .label_elem_circle
-            .label_elem_line
+        .label.label3.js-popupLabel(data-id="2")
+          .label_btn x
+          .label_elem_circle
+          .label_elem_line
 
-          .label.label5.js-popupLabel(data-id="4")
-            .label_btn x
-            .label_elem_circle
-            .label_elem_line
+        .label.label4.js-popupLabel(data-id="3")
+          .label_btn x
+          .label_elem_circle
+          .label_elem_line
 
-          .label.label6.js-popupLabel(data-id="5")
-            .label_btn x
-            .label_elem_circle
-            .label_elem_line
+        .label.label5.js-popupLabel(data-id="4")
+          .label_btn x
+          .label_elem_circle
+          .label_elem_line
 
-          .label.label7.js-popupLabel(data-id="6")
-            .label_btn x
-            .label_elem_circle
-            .label_elem_line
+        .label.label6.js-popupLabel(data-id="5")
+          .label_btn x
+          .label_elem_circle
+          .label_elem_line
 
-          //- .label.label8.js-popupLabel
-          //-   .label_btn x
-          //-   .label_elem_circle
-          //-   .label_elem_line
+        .label.label7.js-popupLabel(data-id="6")
+          .label_btn x
+          .label_elem_circle
+          .label_elem_line
 
-          //- .label.label9.js-popupLabel
-          //-   .label_btn x
-          //-   .label_elem_circle
-          //-   .label_elem_line
+        .label.label8.js-popupLabel(data-id="7")
+          .label_btn x
+          .label_elem_circle
+          .label_elem_line
 
-          //- .label.label10.js-popupLabel
-          //-   .label_btn x
-          //-   .label_elem_circle
-          //-   .label_elem_line
+        .label.label9.js-popupLabel(data-id="8")
+          .label_btn x
+          .label_elem_circle
+          .label_elem_line
 
-          //- .label.label11.js-popupLabel
-          //-   .label_btn x
-          //-   .label_elem_circle
-          //-   .label_elem_line
+        //- .label.label10.js-popupLabel
+        //-   .label_btn x
+        //-   .label_elem_circle
+        //-   .label_elem_line
+
+        //- .label.label11.js-popupLabel
+        //-   .label_btn x
+        //-   .label_elem_circle
+        //-   .label_elem_line
 
       .popup.is-closed
         .container
@@ -104,8 +112,8 @@ html.no-js(lang='')
 
           .label-previews
 
-          .btn Смотреть все
+          .btn.js-popupMoar Смотреть все
           .popup_exit.js-popupExit ЗАКРЫТЬ
 
-    script(src='./assets/templates.js')
-    script(src='./assets/main.js')
+    script(src='/assets/templates.js')
+    script(src='/assets/main.js')

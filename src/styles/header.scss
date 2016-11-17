@@ -12,18 +12,6 @@
     font-size: 16px;
     line-height: 76px;
 
-    img {
-      vertical-align: top;
-    }
-
-    &:first-child {
-      margin-right: 4px;
-
-      img {
-        padding-top: 16px;
-      }
-    }
-
     a {
       margin-right: 34px;
       color: #111111;
@@ -49,23 +37,36 @@
     }
 
     &:last-child {
-      position: relative;
-      float: right;
-      margin-right: 14px;
-
-      &:after {
-        position: absolute;
-        display: block;
-        content: "СПЕЦПРОЕКТ";
-        bottom: -18px;
-        right: 0;
-        font-size: 12px;
-        letter-spacing: 1px;
-      }
-
-      img {
-        padding-top: 25px;
-      }
+      margin-right: 0;
     }
-  }    
+  }
+}
+
+.header_logo {
+  float: left;
+  margin-right: 24px;
+
+  img {
+    padding-top: 13px;
+  }
+}
+
+.header_promo-logo {
+  position: relative;
+  float: right;
+  margin: -76px 14px 0 0;
+
+  &:after {
+    position: absolute;
+    display: block;
+    content: "СПЕЦПРОЕКТ";
+    bottom: -18px;
+    right: 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  img {
+    padding-top: 25px;
+  }
 }
