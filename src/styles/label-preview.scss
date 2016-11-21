@@ -1,6 +1,7 @@
 .label-previews {
-  margin: 37px 0 40px;
-  padding-left: 39px;
+  margin: 37px -36px 40px;
+  text-align: center;
+  padding-left: 52px;
 
   &:after {
     display: block;
@@ -75,7 +76,7 @@
 
 .label__l {
   float: left;
-  margin: 0 60px 20px 0;
+  margin: 0 30px 20px;
   width: 260px;
   height: 110px;
 
@@ -99,8 +100,55 @@
     left: -98px;
   }
 
-  &:nth-child(3),
-  &:nth-child(6) {
-    margin-right: 0;
+
+}
+
+@media screen and (max-width: 939px) {
+  .label-previews {
+    max-width: 692px;
+    margin: 37px auto 40px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 651px) {
+  .label-previews,
+  .label_keeper {
+    padding-left: 44px;
+    max-width: none;
+  }
+
+  .label__l {
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .label__xl {
+    margin: 104px auto 0;
+    width: 260px;
+    height: 110px;
+
+    &:after {
+      top: 10px;
+      left: -38px;
+      width: 79px;
+      height: 79px;
+    }
+
+    &:before {
+      @include triangle(r, white, 50px, 50px);
+      top: 0;
+      left: -98px;
+    }
+
+    .label-preview_circle {
+      width: 21px;
+      height: 21px;
+      top: 39px;
+      left: -25px;
+    }
   }
 }

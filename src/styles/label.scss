@@ -1,6 +1,10 @@
 .labels {
-  width: 100%;
-  height: 100vh;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  width: 98%;
+  height: 89%;
   background-color: transparent;
 }
 
@@ -147,32 +151,35 @@
 }
 
 .label1 {
-  top: 17%;
-  left: 17%;
+  top: 36%;
+  left: 50%;
   margin: 5px;
+  transform: rotate(-45deg);
 }
 
 .label2 {
   top: 33%;
-  left: 24%;
+  left: 20%;
   margin: 3px;
+  transform: rotate(115deg);
 }
 
 .label3 {
-  top: 56%;
-  left: 18%;
+  top: 78%;
+  left: 34%;
   margin: 3px;
+  transform: rotate(115deg);
 }
 
 .label4 {
-  top: 61%;
-  left: 71%;
+  top: 48%;
+  left: 68%;
   margin-left: -4px;
 }
 
 .label5 {
-  top: 35%;
-  left: 40%;
+  top: 25%;
+  left: 35%;
   margin: 4px;
 }
 
@@ -182,17 +189,19 @@
 }
 
 .label7 {
-  top: 31%;
-  left: 64%;
+  top: 13%;
+  left: 67%;
+  transform: rotate(115deg);
 }
 
 .label8 {
-  top: 23%;
+  top: 10%;
   left: 50%;
+  transform: rotate(69deg);
 }
 
 .label9 {
-  bottom: 41%;
+  top: 80%;
   left: 55%;
 }
 
@@ -205,4 +214,118 @@
   top: 86%;
   left: 83%;
   margin-left: 4px;
+}
+
+@media screen and (min-width: 1301px) {
+  .label1 {
+    top: 45%;
+  }
+
+  .label3 {
+    top: 90%;
+  }
+
+  .label9 {
+    top: 91%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .label1 {
+    top: 40%;
+  }
+
+  .label9 {
+    top: 70%;
+  }
+
+  .label6 {
+    top: 50%;
+  }
+
+  .label3 {
+    top: 70%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .label9 {
+    top: 74%;
+  }
+
+  .label6 {
+    top: 50%;
+  }
+
+  .label3 {
+    top: 75%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .label9 {
+    top: 70%;
+  }
+
+  .label6 {
+    top: 50%;
+  }
+
+  .label3 {
+    top: 70%;
+  }
+
+  .label4 {
+    top: 42%;
+  }
+
+  .label7 {
+    top: 10%;
+    left: 64%;
+  }
+
+  .label1 {
+    top: 36%;
+  }
+
+  .label5 {
+    top: 20%;
+    left: 32%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .label9 {
+    top: 65%;
+  }
+  .label3 {
+    top: 67%;
+    left: 30%;
+  }
+
+  .label6 {
+    top: 44%;
+  }
+
+  .label2 {
+    left: 15%;
+  }
+
+  .label5 {
+    top: 16%;
+    left: 27%;
+  }
+
+  .label1 {
+    top: 30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .labels {
+    width: 750px;
+    height: 80%;
+    left: 0;
+    right: 0;
+  }
 }

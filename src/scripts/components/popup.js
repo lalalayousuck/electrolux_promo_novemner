@@ -26,6 +26,7 @@ Component.define('popup', {
     console.log(this.dataPosts)
     this.renderPosts();
 
+
     $('.popup').addClass('is-visible');
   },
 
@@ -37,11 +38,13 @@ Component.define('popup', {
 
   setMainAdvise: function() {
     $('.label-preview.label__xl').html('<div class="label-preview_circle"></div><a class="post-preview" href="' + this.data[this.index].url + '"><img class="post-preview_pic" src="' + this.data[this.index].image + '"><div class="post-preview_tag">' + this.data[this.index].category + '</div><div class="post-preview_title">' + this.data[this.index].title + '</div></a>');    
+    $('.popup_desc').html('' + this.data[this.index].advise + '');
   },
 
   renderPosts: function() {
     this.dataPostsRender = this.dataPosts.slice(0, 6);
     $('.label-previews').html(Templates.advices({posts: this.dataPostsRender}));
+    $('.label-previews').after('<div class="btn js-popupMoar">Смотреть все</div>');
   },
 
   showMoarPosts: function(e, el) {
@@ -54,5 +57,6 @@ Component.define('popup', {
     $('.popup').removeClass('is-visible'); 
     $('.is-active').removeClass('is-active');
     $('.label-previews').html('');
+    $('.btn').remove();
   }
 });

@@ -20,7 +20,8 @@
     }
 
     .post-preview_title {
-      line-height: 18px;
+      font-size: 13px;
+      line-height: 16px;
     }
   }
 }
@@ -42,4 +43,25 @@
   font-weight: 600;
   color: #333333;
   line-height: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .post-preview {
+    font-size: 13px;
+    padding: 0 10px;
+
+    .post-preview_pic {
+      width: 80px;
+      height: 80px;
+    }
+
+    .post-preview_tag {
+      padding: 0;
+    }
+
+    .post-preview_title {
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
 }

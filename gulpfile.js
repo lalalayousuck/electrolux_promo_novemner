@@ -108,38 +108,39 @@ gulp.task('templates', function() {
     .pipe(gulp.dest('./build/assets'))
 });
 
-// var gulpSSH = new GulpSSH({
-//   ignoreErrors: false,
-//   sshConfig: {
-//     host: 'app1.improvemedia.ru',
-//     username: 'promo_imr',
-//     privateKey: fs.readFileSync('/Users/Headonfire/.ssh/id_rsa')
-//   }
-// })
-
-// gulp.task('deploy', function() {
-//   runSequence('clean', 'build', 'productionJS', 'productionCSS', 'productionIMG', 'gzip', function() {
-//     gulp.src('./build/**')
-//       .pipe(gulpSSH.dest('/srv/mtsazbukaremonta.inmyroom.ru/'))
-//   })
-// })
 
 gulp.task('deploy', function() {
-  var gulpSSH = new GulpSSH({
-    ignoreErrors: false,
-    sshConfig: {
-      host: 'hw01.improvemedia.ru',
-      port: 2233,
-      username: 'inmyroom',
-      privateKey: fs.readFileSync('/Users/headonfire/headonfire/.ssh/id_rsa')
-    }
-  })
+  ['app1.improvemedia.ru', 'app2.improvemedia.ru'].forEach(function(host) {
+    var gulpSSH = new GulpSSH({
+      ignoreErrors: false,
+      sshConfig: {
+        host: host,
+        username: 'promo_imr',
+        privateKey: fs.readFileSync('/Users/Headonfire/.ssh/id_rsa')
+      }
+    })
 
-  runSequence('clean', 'build', 'productionJS', 'productionCSS', 'productionIMG', 'gzip', function() {
     gulp.src('./build/**')
-      .pipe(gulpSSH.dest('/srv/promostaging.inmyroom.ru'))
+      .pipe(gulpSSH.dest('/srv/electrolux-cleaning.inmyroom.ru/'))
   })
 })
+
+// gulp.task('deploy', function() {
+//   var gulpSSH = new GulpSSH({
+//     ignoreErrors: false,
+//     sshConfig: {
+//       host: 'hw01.improvemedia.ru',
+//       port: 2233,
+//       username: 'inmyroom',
+//       privateKey: fs.readFileSync('/Users/headonfire/headonfire/.ssh/id_rsa')
+//     }
+//   })
+
+//   runSequence('clean', 'build', 'productionJS', 'productionCSS', 'productionIMG', 'gzip', function() {
+//     gulp.src('./build/**')
+//       .pipe(gulpSSH.dest('/srv/promostaging.inmyroom.ru'))
+//   })
+// })
 
 gulp.task('productionJS', function() {
   gulp.src('./build/**/*.js')
